@@ -1,10 +1,10 @@
 {
   "expo": {
     "name": "Yuppi",
-    "slug": "yuppi",
+    "slug": "yuppi-app",
     "scheme": "yuppi",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -50,6 +50,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "207c03fc-81b5-4449-86b0-759b96870c8b"
+      }
+    },
+    "owner": "yuppi-app"
   }
 }
