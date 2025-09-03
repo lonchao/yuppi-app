@@ -5,9 +5,12 @@ export const colors = {
   primary: '#2563EB',
   onPrimary: '#FFFFFF',
   background: '#0A0A0A',
+  headerBackground: '#45484F',
   onBackground: '#FFFFFF',
   card: '#1E1E1E',
   error: '#DC2626',
+  accent: '#FF7919',
+  icon: '#8B8E95',
 };
 
 export const spacing = {
@@ -27,7 +30,13 @@ export const typography = {
 } satisfies Record<string, TextStyle>;
 
 export const elevation = {
-  sm: { shadowColor: '#000', shadowOpacity: 0.3, shadowRadius: 6, shadowOffset: { width: 0, height: 3 }, elevation: 3 },
+  sm: {
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 3,
+  },
 };
 
 type ThemeValue = { scheme: 'light' | 'dark'; toggle: () => void };
@@ -36,7 +45,10 @@ const ThemeCtx = createContext<ThemeValue>({ scheme: 'dark', toggle: () => {} })
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const system = useColorScheme();
   const [scheme, setScheme] = useState<'light' | 'dark'>(system || 'dark');
-  const value = useMemo(() => ({ scheme, toggle: () => setScheme((s) => (s === 'light' ? 'dark' : 'light')) }), [scheme]);
+  const value = useMemo(
+    () => ({ scheme, toggle: () => setScheme((s) => (s === 'light' ? 'dark' : 'light')) }),
+    [scheme],
+  );
   return <ThemeCtx.Provider value={value}>{children}</ThemeCtx.Provider>;
 }
 

@@ -5,7 +5,7 @@
     "scheme": "yuppi",
     "version": "1.0.0",
     "orientation": "landscape",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/adaptive-icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash-yuppi.png",
