@@ -1,6 +1,8 @@
+import 'react-native-gesture-handler';
 import React, { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { enableScreens } from 'react-native-screens';
 
 import { Stack } from 'expo-router';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -13,6 +15,9 @@ SplashScreen.setOptions({
   fade: true,
 });
 SplashScreen.preventAutoHideAsync();
+
+// Ensure native screen components are registered
+enableScreens(true);
 
 export default function RootLayout() {
   const [loaded] = useFonts({
