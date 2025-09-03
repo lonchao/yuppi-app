@@ -4,7 +4,7 @@ import { useColorScheme, type TextStyle } from 'react-native';
 export const colors = {
   primary: '#2563EB',
   onPrimary: '#FFFFFF',
-  background: '#0A0A0A',
+  background: '#1D2027',
   headerBackground: '#45484F',
   onBackground: '#FFFFFF',
   card: '#1E1E1E',

@@ -55,8 +55,8 @@ function TopTabBar({ state, navigation }: MaterialTopTabBarProps) {
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.lg }}>
           {[
             { route: 'index', icon: 'view-grid-plus' },
-            { route: 'musicas', icon: 'music-note' },
-            { route: 'leituras', icon: 'book-open-variant' },
+            { route: 'musicas', icon: 'music' },
+            { route: 'leituras', icon: 'book-open-blank-variant' },
           ].map((item) => {
             const idx = state.routes.findIndex((r) => r.name === item.route);
             const isSelected = idx === state.index;

@@ -13,7 +13,8 @@
       "backgroundColor": "#1E2128"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.berg.yuppi"
     },
     "android": {
       "adaptiveIcon": {
