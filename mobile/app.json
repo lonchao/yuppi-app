@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Yuppi",
+    "slug": "yuppi",
+    "scheme": "yuppi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash-yuppi.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E2128"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#1E2128"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1E2128",
+          "image": "./assets/images/splash-yuppi.png",
+          "dark": {
+            "image": "./assets/images/splash-yuppi.png",
+            "backgroundColor": "#1E2128"
+          },
+          "imageWidth": "100%"
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

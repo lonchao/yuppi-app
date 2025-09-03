@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": [
+      "expo",
+      "expo-router"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/services/*": [
+        "services/*"
+      ],
+      "@/store/*": [
+        "store/*"
+      ],
+      "@/assets/*": [
+        "assets/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "app.d.ts",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "extends": "expo/tsconfig.base"
+}

@@ -1,0 +1,78 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+__MACOSX/
+
+# Node / general
+node_modules/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Build output
+build/
+dist/
+.cache/
+coverage/
+.tmp/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Expo / React Native (monorepo)
+# Root-level caches
+.expo/
+.expo-shared/
+web-build/
+
+# Mobile app
+mobile/node_modules/
+mobile/.expo/
+mobile/.expo-shared/
+mobile/web-build/
+mobile/coverage/
+mobile/dist/
+mobile/build/
+
+# iOS
+mobile/ios/build/
+mobile/ios/DerivedData/
+mobile/ios/*.xcworkspace/xcuserdata/
+mobile/ios/Pods/
+mobile/ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+mobile/ios/*.xcodeproj/xcuserdata/
+
+# Android
+mobile/android/.gradle/
+mobile/android/.idea/
+mobile/android/local.properties
+mobile/android/**/build/
+mobile/android/**/captures/
+mobile/android/**/.cxx/
+
+# Misc
+*.iml
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Expo CLI/packager artifacts
+*.expo/*
+.expo-dev-client/**
+
+# Metro cache
+.expo/.metro-cache/
+metro-cache/
